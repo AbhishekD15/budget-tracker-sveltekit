@@ -48,7 +48,7 @@ A minimal, single-page budget tracker web app built with SvelteKit. This app all
      ```
 
 4. **Open the app in your browser:**
-     Navigate to `http://localhost:3000` to see the app in action.
+     Navigate to `http://localhost:5173/` to see the app in action.
 
 ## Deployment
 
