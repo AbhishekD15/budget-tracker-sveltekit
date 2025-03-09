@@ -1,38 +1,61 @@
-# sv
+# Budget Tracker Web App with SvelteKit
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A minimal, single-page budget tracker web app built with SvelteKit. This app allows you and your partner to input monthly incomes and planned expenses, verify them at the end of the month, and export your data as JSON or CSV.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Budget Input:**  
+    Enter incomes and a dynamic list of planned expenses. Easily add or remove expense entries.
+    
+- **Budget Summary:**  
+    View a summary of total income, total expenses, and calculate potential savings. Update actual expenses to compare planned vs. actual spending.
 
-```bash
-# create a new project in the current directory
-npx sv create
+- **Export Functionality:**  
+    Export your budget data as JSON or CSV using a unified data schema for easy sharing and analysis.
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Project Structure
 
-## Developing
+- `src/components/`  
+    Contains Svelte components such as `BudgetInput.svelte` and `BudgetSummary.svelte`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- `src/lib/`  
+    - `stores.ts` – Svelte store managing the global budget data.
+    - `types.ts` – TypeScript interfaces for the project data model.
+    - `export.ts` – Utility functions for exporting budget data as JSON or CSV.
 
-```bash
-npm run dev
+- `src/routes/+page.svelte`  
+    Main entry point that renders the Budget Input and Budget Summary components.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Getting Started
 
-## Building
+1. **Clone the repository:**
 
-To create a production version of your app:
+     ```bash
+     git clone https://github.com/yourusername/budget-tracker-sveltekit.git
+     cd budget-tracker-sveltekit
+     ```
 
-```bash
-npm run build
-```
+2. **Install dependencies:**
 
-You can preview the production build with `npm run preview`.
+     ```bash
+     npm install
+     ```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+3. **Run the development server:**
+
+     ```bash
+     npm run dev
+     ```
+
+4. **Open the app in your browser:**
+     Navigate to `http://localhost:3000` to see the app in action.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the project's coding standards and includes appropriate tests.
+
+
+## Contact
+
+For any questions or feedback, please reach out to [Abhishek Das](mailto:das.abhishek15@gmail.com).
+
