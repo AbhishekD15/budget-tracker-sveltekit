@@ -50,12 +50,29 @@ A minimal, single-page budget tracker web app built with SvelteKit. This app all
 4. **Open the app in your browser:**
      Navigate to `http://localhost:3000` to see the app in action.
 
+## Deployment
+
+This app can be easily deployed on Vercel.
+
+1. **Install Vercel CLI:**
+
+     ```bash
+     npm install -g vercel
+     ```
+
+2. **Deploy the app:**
+
+     ```bash
+     vercel
+     ```
+
+3. **Follow the prompts:**
+     Vercel CLI will guide you through the deployment process. Once completed, you will get a deployment URL.
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the project's coding standards and includes appropriate tests.
 
-
 ## Contact
 
 For any questions or feedback, please reach out to [Abhishek Das](mailto:das.abhishek15@gmail.com).
-
